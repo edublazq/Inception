@@ -56,15 +56,15 @@ services:
         device: $HOME/data/wordpress
         o: bind
     
-    secrets:
-      db_password:
-        file: ../secrets/db_password
+  secrets:
+    db_password:
+      file: ../secrets/db_password
 
-      db_root_password:
-        file: ../secrets/db_root_password
+    db_root_password:
+      file: ../secrets/db_root_password
 
-      wp_user_password:
-        file: ../secrets/wp_user_password
+    wp_user_password:
+      file: ../secrets/wp_user_password
 
-      wp_admin_password:
-        file: ../secrets/wp_admin_password
+    wp_admin_password:
+      file: ../secrets/wp_admin_password
