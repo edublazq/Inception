@@ -56,7 +56,7 @@ then
         --allow-root
 
     wp core install \
-        --url="${DOMAIN_NAME}" \
+        --url="https://${DOMAIN_NAME}" \
         --title="${WORDPRESS_TITLE}" \
         --admin_user="${WORDPRESS_ADMIN}" \
         --admin_password="${WORDPRESS_ADMIN_PASS}" \

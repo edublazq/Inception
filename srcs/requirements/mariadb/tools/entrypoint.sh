@@ -27,6 +27,7 @@ if [ -z "$MYSQL_USER" ]; then
 fi
 
 init_db() {
+    chown -R mysql:mysql /var/lib/mysql
     mysql_install_db --user=mysql --datadir=/var/lib/mysql
 
     mysqld_safe --datadir=/var/lib/mysql --skip-networking &

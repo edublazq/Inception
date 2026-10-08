@@ -2,6 +2,7 @@ FROM debian:bookworm
 
 RUN apt-get update && apt-get install -y --no-install-recommends \
 	curl \
+	php-cli \
 	php-fpm \
 	php-mysql \
 	ca-certificates \
@@ -24,4 +25,4 @@ EXPOSE 9000
 WORKDIR /var/www/html
 
 ENTRYPOINT ["/usr/local/bin/entrypoint.sh"]
-CMD ["/usr/sbin/php-fpm8-2", "-F"]
+CMD ["/usr/sbin/php-fpm8.2", "-F"]
